@@ -77,4 +77,7 @@ HangSoon::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.assets.precompile += %w( modernizr.js respond.js respond-proxy.html respond.proxy.js )
+
 end
